@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for Black & Blue Theme */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            padding-top: 70px;
+        }
+        .navbar {
+            background-color: #1A5319;
+        }
+        .navbar a {
+            color: #fff;
+        }
+        .hero {
+            background: url('https://down-id.img.susercontent.com/file/3cc584ba0b893b1d42978ddc7b62f5f8') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+            position: relative;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #1f1f1f;
+            color: #fff;
+            border: none;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s;
+        }
+        .category {
+            padding: 50px 0;
+        }
+        .category h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #1A5319;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #cce7ff;
+        }
+        .contact-form {
+            padding: 50px 0;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        /* Custom styling for Contact Form */
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #1f1f1f; /* Dark gray background */
+            color: #fff; /* White text color */
+            border: 1px solid #444; /* Gray border */
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #c0c0c0; /* Light gray placeholder text */
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            background-color: #333; /* Darker background on focus */
+            color: #fff;
+            border-color: #1A5319; /* Green border for focus */
+        }
+
+        .contact-form button {
+            background-color: #1A5319; /* Green button color */
+            color: #fff;
+            border: none;
+        }
+
+        .contact-form button:hover {
+            background-color: #145114; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">ShopHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Discover Amazing Products</h1>
+            <p>Shop the best deals and exclusive offers</p>
+            <a href="#" class="btn btn-outline-light">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="category" id="categories">
+        <div class="container">
+            <h2>Popular Categories</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="https://down-id.img.susercontent.com/file/3cc584ba0b893b1d42978ddc7b62f5f8" class="card-img-top" alt="Electronics">
+                        <div class="card-body">
+                            <h5 class="card-title">Electronics</h5>
+                            <p class="card-text">Find the latest gadgets and accessories.</p>
+                            <a href="#" class="btn btn-outline-light">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="https://cdn0-production-images-kly.akamaized.net/4xD8d70Cldnu1w-HMx5UOwUE4wI=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3951337/original/045575300_1646292538-275032202_129260279626101_3805888531960104599_n.jpg" class="card-img-top" alt="Fashion">
+                        <div class="card-body">
+                            <h5 class="card-title">Fashion</h5>
+                            <p class="card-text">Stay trendy with the newest styles.</p>
+                            <a href="#" class="btn btn-outline-light">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="https://img2.biggo.com/s-MKkkmp_jzeW-OitCpx-r3ie9FR9xnbJnQLkBtv6N34/https://filebroker-cdn.lazada.co.id/kf/S3f45ded668a148e59539cbd0d731eaf89.jpg" class="card-img-top" alt="Home & Living">
+                        <div class="card-body">
+                            <h5 class="card-title">Home & Living</h5>
+                            <p class="card-text">Upgrade your living space with our picks.</p>
+                            <a href="#" class="btn btn-outline-light">Browse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="container my-5" id="about">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="text-center">ShopHub is a leading online shopping platform that connects customers with the best products and exclusive offers from various brands around the world.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ShopHub. All Rights Reserved.</p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
